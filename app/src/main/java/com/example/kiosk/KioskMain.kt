@@ -48,7 +48,7 @@ while (true) {
                 }
 
                 5 -> {
-                    println("이전 메뉴로 돌아갑니다")
+                    println("담은 메뉴를 초기화하고 이전 메뉴로 돌아갑니다")
                     totalPrice = 0
                     break
                 }
@@ -64,9 +64,10 @@ while (true) {
 
             if (finishSelect() == 1) {
                 Payment().discount(totalPrice)
-            } else continue
+            } else break
 
         }
+        break
     }
 
 }
